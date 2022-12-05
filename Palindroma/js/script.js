@@ -8,8 +8,14 @@ const word = prompt("Type a word");
 
 //Check if the word is a palindrome word with optimal solution
 (IsPalindrome_optimal(word)) ? 
-console.log("The word you chose is a palindrome word") :
-console.log("The word you chose is not a palindrome word");
+  console.log("The word you chose is a palindrome word") :
+  console.log("The word you chose is not a palindrome word");
+
+//Palindrome check function
+function IsPalindrome(word){
+  //Take the string, reverse it and compare it with our word
+  return (word.split("").reverse().join("") === word) ? true : false;
+}
 
 //Optimal Palindrome check function
 function IsPalindrome_optimal(word){ 
@@ -23,10 +29,4 @@ function IsPalindrome_optimal(word){
       --j;
   }
   return true;
-}
-
-//Palindrome check function
-function IsPalindrome(word){
-  //Take the string, reverse it and compare it with our word
-  return (word.split("").reverse().join("") == word) ? true : false;
 }
