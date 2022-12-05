@@ -12,7 +12,7 @@ do{
 
 //Generate a random number for the IA
 const IANumber = numberRandom(1,6);
-console.log(IANumber)
+
 //Check if the sum of IAnumber and the userNumber is even and the user chose even, the user win
 if(IsEven(IANumber + userNumber) && chose.toLowerCase() == "even")
     console.log("Hai vinto")
