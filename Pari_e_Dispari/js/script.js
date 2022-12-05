@@ -12,9 +12,12 @@ do{
 
 //Generate a random number for the IA
 const IANumber = numberRandom(1,6);
-
+console.log(IANumber)
 //Check if the sum of IAnumber and the userNumber is even and the user chose even, the user win
 if(IsEven(IANumber + userNumber) && chose.toLowerCase() == "even")
+    console.log("Hai vinto")
+//Check if the sum of IAnumber and the userNumber is odd and the user chose odd, the user win
+else if(!IsEven(IANumber + userNumber) && chose.toLowerCase() == "odd")
     console.log("Hai vinto")
 //else the user lose
 else
@@ -25,7 +28,7 @@ function numberRandom(min,max){
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-//Function to check of the number is even
+//Function to check if the number is even
 function IsEven(n){  
   return (!(n%2)) ? true : false;
 }
