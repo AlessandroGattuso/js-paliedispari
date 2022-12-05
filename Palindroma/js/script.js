@@ -4,17 +4,19 @@ const word = prompt("Type a word");
 //Check if the word is a palindrome word
 (IsPalindrome(word)) ? 
   console.log("The word you chose is a palindrome word") :
-  console.log("The word you chose isn't a palindrome word");
+  console.log("The word you chose is not a palindrome word");
 
 
 //Palindrome check function
 function IsPalindrome(word){ 
-  let i;
+  let i = 0;
   let j = word.length - 1;
   //TwoPointer algorithm 
-  for(i = 0; i <= j; ++i, --j)
+  while(i < j){
       if(word[i] != word[j])
             return false;
-
+      ++i;
+      --j;
+  }
   return true;
 }
