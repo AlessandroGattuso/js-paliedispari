@@ -27,5 +27,6 @@ function IsPalindrome_optimal(word){
 
 //Palindrome check function
 function IsPalindrome(word){
+  //Take the string, reverse it and compare it with our word
   return (word.split("").reverse().join("") == word) ? true : false;
 }
