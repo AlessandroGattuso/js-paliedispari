@@ -2,13 +2,13 @@
 let chose;
 do{
   chose = prompt("Chose even or odd");
-}while(chose.toLowerCase() != 'even' && chose.toLowerCase() != 'odd');
+}while(chose.toLowerCase() !== 'even' && chose.toLowerCase() !== 'odd');
 
 //Asking the user to pick a number between 1 and 5 and validate it
 let userNumber;
 do{
   userNumber = parseInt(prompt("Now chose a number between 1 and 5"));
-}while(userNumber < 1 && userNumber > 5);
+}while(userNumber < 1 || userNumber > 5);
 
 console.log("You chose " + chose.toLowerCase());
 //Generate a random number for the IA
