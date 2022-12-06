@@ -20,13 +20,11 @@ function IsPalindrome(word){
 //Optimal Palindrome check function
 function IsPalindrome_optimal(word){ 
   let i = 0;
-  let j = word.length - 1;
   //TwoPointer algorithm 
-  while(i < j){
-      if(word[i] != word[j])
+  while(i < word.length - (i + 1)){
+      if(word[i] != word[word.length - (i + 1)])
             return false;
       ++i;
-      --j;
   }
   return true;
 }

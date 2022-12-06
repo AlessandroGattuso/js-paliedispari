@@ -12,17 +12,17 @@ do{
 
 console.log("You chose " + chose.toLowerCase());
 //Generate a random number for the IA
-const IANumber = numberRandom(1,6);
+const AINumber = numberRandom(1,6);
 
-//Check if the sum of IAnumber and the userNumber is even and the user chose even, the user win
-if(IsEven(IANumber + userNumber) && chose.toLowerCase() == "even")
-    console.log(`${IANumber} + ${userNumber} = ${IANumber + userNumber}  You win`)
-//Check if the sum of IAnumber and the userNumber is odd and the user chose odd, the user win
-else if(!IsEven(IANumber + userNumber) && chose.toLowerCase() == "odd")
-    console.log(`${IANumber} + ${userNumber} = ${IANumber + userNumber}  You win`)
+//Check if the sum of AInumber and the userNumber is even and the user chose even, the user win
+if(isEven(AINumber + userNumber) && chose.toLowerCase() == "even")
+    console.log(`${AINumber} + ${userNumber} = ${AINumber + userNumber}  You win`)
+//Check if the sum of AInumber and the userNumber is odd and the user chose odd, the user win
+else if(!isEven(AINumber + userNumber) && chose.toLowerCase() == "odd")
+    console.log(`${AINumber} + ${userNumber} = ${AINumber + userNumber}  You win`)
 //else the user lose
 else
-    console.log(`${IANumber} + ${userNumber} = ${IANumber + userNumber}  You lose`)
+    console.log(`${AINumber} + ${userNumber} = ${AINumber + userNumber}  You lose`)
 
 //Random number function 
 function numberRandom(min,max){
@@ -30,6 +30,6 @@ function numberRandom(min,max){
 }
 
 //Function to check if the number is even
-function IsEven(n){  
+function isEven(n){  
   return (!(n%2)) ? true : false;
 }
