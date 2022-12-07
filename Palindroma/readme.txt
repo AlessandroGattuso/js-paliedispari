@@ -29,7 +29,7 @@
                 
                 while(i < j){
                   i            j    =====>  i = 0  
-                  [T, E, N ,E, T]         if the two letters are different break the cicle and say 's' is not a palindrome word
+                  [T, E, N ,E, T]         if the two letters are different break the cycle and say 's' is not a palindrome word
 
                       i     j       =====>  i = 1
                   [T, E, N ,E, T]         //same thing 

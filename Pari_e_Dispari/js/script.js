@@ -31,5 +31,5 @@ function numberRandom(min,max){
 
 //Function to check if the number is even
 function isEven(n){  
-  return (!(n%2)) ? true : false;
+  return (!(n%2));
 }
